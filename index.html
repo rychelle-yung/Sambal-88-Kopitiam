@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sambal 88</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;            
+            background: url('img/faq.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .header {
+            width: 100%; 
+            top: 0; 
+            box-sizing: border-box;
+        }
+        .footer {
+            width: 100%;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="Sambal 88 Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="booktable.html">Book a Table</a>
+            <a href="giftcard.html">Gift Cards</a>
+            <a href="faq.html">FAQs</a>
+          </nav>
+    </header>
+
+    <section class="content">
+    <div class="login-container">
+        <h1>Sambal 88</h1>
+        <img src="img/login.png" alt="Login Image"> 
+        <form id="login-page">
+            <div class="login-group">
+                <img src="img/account.png" alt="User Icon"> 
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="login-group">
+                <img src="img/email.png" alt="Email Icon"> 
+                <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+            </div>
+            <div class="login-group">
+                <button type="submit" id="login">Login</button>
+            </div>
+            <div class="login-group">
+                <button type="button" id="signup">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+          <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a>
+        </div>
+        <div class="social-icons">
+          <img src="img/ig.png" alt="Instagram">
+          <img src="img/twitter.png" alt="Twitter">
+          <img src="img/facebook.png" alt="Facebook">
+        </div>
+        <div class="hours">
+          <div>Monday - Friday 11AM - 2:30PM | 5PM - 9PM (Last call 8:40PM)</div>
+          <div>Saturday & Sunday 12PM - 3PM | 5PM - 10PM (Last call 9:40PM)</div>
+        </div>
+    </footer>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const namePattern = /^[A-Za-z\s]+$/;
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (!namePattern.test(name)) {
+                alert('Please enter a valid name containing only letters and spaces.');
+                return false;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            return true;
+        }
+
+        document.getElementById('login-page').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (validateForm()) {
+                alert('Login Successful')
+                window.location.href = 'home.html';
+            }
+        });
+
+        document.getElementById('signup').addEventListener('click', function() {
+            window.location.href = 'signup.html';
+        });
+    </script>
+</body>
+</html>

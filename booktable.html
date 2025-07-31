@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Table - Sambal 88</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .content {
+      padding: 40px 20px;
+      flex: 1;
+      background: url('img/faq.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <img src="img/logo.png" alt="Sambal 88 Logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="booktable.html">Book a Table</a>
+      <a href="cart.html">Cart</a>
+      <a href="giftcard.html">Gift Cards</a>
+      <a href="faq.html">FAQs</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <div class="form-container">
+      <h1>Book a Table</h1>
+      <form id="reservation-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" pattern="\d+" placeholder="0123456789" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="party-size">Party Size</label>
+          <input type="number" id="party-size" name="party-size" min="1" placeholder="2" required>
+        </div>
+        <div class="form-group">
+          <label for="special-requests">Special Requests</label>
+          <textarea id="special-requests" name="special-requests"
+            placeholder="Any special requests or dietary restrictions"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit Reservation</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a>
+    </div>
+    <div class="social-icons">
+      <img src="img/ig.png" alt="Instagram">
+      <img src="img/twitter.png" alt="Twitter">
+      <img src="img/facebook.png" alt="Facebook">
+    </div>
+    <div class="hours">
+      <div>Monday - Friday 11AM - 2:30PM | 5PM - 9PM (Last call 8:40PM)</div>
+      <div>Saturday & Sunday 12PM - 3PM | 5PM - 10PM (Last call 9:40PM)</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('reservation-form').addEventListener('submit', function (event) {
+      event.preventDefault(); 
+
+
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+      const date = formData.get('date');
+      const time = formData.get('time');
+      const partySize = formData.get('party-size');
+      const specialRequests = formData.get('special-requests');
+
+
+      const emailPattern = /^\S+@\S+\.\S+$/;
+      const operatingHours = {
+        start: '11:00',
+        end: '21:00'
+      };
+
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      if (time < operatingHours.start || time > operatingHours.end) {
+        alert('Reservation time must be within operating hours: 11:00 AM - 9:00 PM.');
+        return;
+      }
+
+      alert('Reservation successfully submitted!');
+      this.reset();
+    });
+  </script>
+</body>
+
+</html>

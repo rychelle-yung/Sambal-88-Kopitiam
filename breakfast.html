@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakfast Menu - Sambal 88</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hero {
+      background: url('img/breakfast.jpeg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <img src="img/logo.png" alt="Sambal Baba Logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="booktable.html">Book a Table</a>
+      <a href="cart.html">Cart</a>
+      <a href="giftcard.html">Gift Cards</a>
+      <a href="faq.html">FAQs</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Breakfast</h1>
+  </section>
+
+  <nav class="menu-nav">
+    <a href="breakfast.html">Breakfast</a>
+    <a href="bread.html">Bread & Butter</a>
+    <a href="main.html">Main</a>
+    <a href="vegetarian.html">Vegetarian</a>
+    <a href="sides.html">Sides</a>
+    <a href="drinks.html">Drinks</a>
+  </nav>
+
+  <section class="menu-section">
+
+
+    <div class="menu-item">
+      <img src="img/egg.jpeg" alt="Half-boiled egg">
+      <div class="details">
+        <h3>Half-Boiled Egg</h3>
+        <p>Soft, perfectly cooked white with a rich, runny yolk, served with a touch of seasoning for a simple yet
+          indulgent treat.</p>
+        <p class="price">RM3</p>
+      </div>
+      <button data-name="Half-boiled egg" data-price="3">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/bigbreakfast.jpeg" alt="Big Breakfast">
+      <div class="details">
+        <h3>Big Breakfast</h3>
+        <p>A substantial big breakfast with eggs, bacon, sausages, hash browns, grilled tomatoes, and toast.</p>
+        <p class="price">RM15</p>
+      </div>
+      <button data-name="Big Breakfast" data-price="15">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/putumayam.jpeg" alt="Putu Mayam">
+      <div class="details">
+        <h3>Putu Mayam</h3>
+        <p>Delicate steamed rice flour noodles topped with sweet grated coconut and served with palm sugar syrup,
+          offering a light and flavorful treat.</p>
+        <p class="price">RM7</p>
+      </div>
+      <button data-name="Putu Mayam" data-price="7">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/charkueyteow.jpeg" alt="Putu Mayam">
+      <div class="details">
+        <h3>Char Kuey Teow</h3>
+        <p>Stir-fried flat rice noodles with prawns, Chinese sausage, eggs, and bean sprouts, offering a flavorful and
+          savory delight.</p>
+        <p class="price">RM8</p>
+      </div>
+      <button data-name="Char Kuey Teow" data-price="8">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/shrimpmai.jpeg" alt="Srhimp Shumai">
+      <div class="details">
+        <h3>Srhimp Shumai</h3>
+        <p>Savory steamed dumpling filled with seasoned shrimp, served with a dipping sauce.</p>
+        <p class="price">RM4</p>
+      </div>
+      <button data-name="Shrimp Shu Mai" data-price="4">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/springroll.jpeg" alt="Spring Roll">
+      <div class="details">
+        <h3>Spring Roll</h3>
+        <p>Crisp wrapper filled with combination of chopped meats, glass noodles, wood-ear fungi and shredded carrots.
+        </p>
+        <p class="price">RM2</p>
+      </div>
+      <button data-name="Spring Roll" data-price="2">Add to Cart</button>
+    </div>
+
+
+    <div class="menu-item">
+      <img src="img/cheecheongfun.jpeg" alt="Chee Cheong Fun">
+      <div class="details">
+        <h3>Chee Cheong Fun</h3>
+        <p>Steamed flat rice noodle rolls taken with sweet sauce or curry or a combination of both.</p>
+        <p class="price">RM6</p>
+      </div>
+      <button data-name="Chee Cheong Fun" data-price="6">Add to Cart</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="img/youtiao.jpeg" alt="Youtiao">
+      <div class="details">
+        <h3>Youtiao</h3>
+        <p>Long golden-brown deep-fried strip of wheat flour dough.</p>
+        <p class="price">RM2</p>
+      </div>
+      <button data-name="Youtiao" data-price="2">Add to Cart</button>
+    </div>
+
+
+    <div class="menu-item">
+      <img src="img/karipap.jpeg" alt="Curry Puff">
+      <div class="details">
+        <h3>Curry Puff</h3>
+        <p>Small pie consisting of curry with chicken and potatoes in a deep-fried pastry shell.</p>
+        <p class="price">RM2</p>
+      </div>
+      <button data-name="Curry Puff" data-price="2">Add to Cart</button>
+    </div>
+
+
+  </section>
+
+  
+<div class="popup-message" id="popup-message">
+  <p id="popup-text"></p>
+</div>
+
+  <footer class="footer">
+    <div>
+      <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a>
+    </div>
+    <div class="social-icons">
+      <img src="img/ig.png" alt="Instagram">
+      <img src="img/twitter.png" alt="Twitter">
+      <img src="img/facebook.png" alt="Facebook">
+    </div>
+    <div class="hours">
+      <div>Monday - Friday 11AM - 2:30PM | 5PM - 9PM (Last call 8:40PM)</div>
+      <div>Saturday & Sunday 12PM - 3PM | 5PM - 10PM (Last call 9:40PM)</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

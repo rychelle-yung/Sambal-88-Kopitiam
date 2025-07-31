@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Sambal 88</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .main-content {
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      background-image: url('img/menu.png');
+      background-size: cover;
+      background-position: center;
+      color: #000;
+      flex: 1;
+    }
+    .main-content::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      z-index: 1;
+    }
+    .main-content h1, .main-content p, .cta-button {
+      position: relative;
+      z-index: 2;
+    }
+    .main-content h1 {
+      font-size: 3em;
+      font-family: 'DM Serif Display', serif;
+      margin-bottom: 20px;
+    }
+    .main-content p {
+      font-size: 1.2em;
+      margin: 0 auto;
+      max-width: 800px;
+      font-family: 'Mukta', sans-serif;
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <img src="img/logo.png" alt="Sambal 88 Logo">
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="booktable.html">Book a Table</a>
+    <a href="cart.html">Cart</a>
+    <a href="giftcard.html">Gift Cards</a>
+    <a href="faq.html">FAQs</a>
+  </nav>
+</header>
+
+<section class="main-content">
+  <h1>Discover Our Delicious Menu</h1>
+  <p>At Sambal 88, we offer a wide range of mouth-watering dishes crafted with the finest ingredients. From traditional favorites to modern twists, our menu has something to satisfy every palate. Explore our culinary creations and experience the best of both classic and contemporary cuisine.</p>
+  <a href="breakfast.html" class="cta-button">Start Ordering</a>
+</section>
+
+<footer class="footer">
+  <div>
+    <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a>
+  </div>
+  <div class="social-icons">
+    <img src="img/ig.png" alt="Instagram">
+    <img src="img/twitter.png" alt="Twitter">
+    <img src="img/facebook.png" alt="Facebook">
+  </div>
+  <div class="hours">
+    <div>Monday - Friday 11AM - 2:30PM | 5PM - 9PM (Last call 8:40PM)</div>
+    <div>Saturday & Sunday 12PM - 3PM | 5PM - 10PM (Last call 9:40PM)</div>
+  </div>
+</footer>
+</body>
+</html>

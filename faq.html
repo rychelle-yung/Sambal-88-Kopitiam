@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Sambal 88</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .main-content {
+      padding: 40px 20px;
+      color: #000;
+      flex: 1;
+      background-image: url('img/faq.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <img src="img/logo.png" alt="Sambal 88 Logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="booktable.html">Book a Table</a>
+      <a href="giftcard.html">Gift Cards</a>
+      <a href="faq.html">FAQs</a>
+    </nav>
+  </header>
+
+  <section class="main-content">
+    <div class="faq-box">
+      <h1>Frequently Asked Questions</h1>
+      <div class="faq-item">
+        <h2>What are your restaurant hours?</h2>
+        <p>Monday - Friday: 11AM - 2:30PM | 5PM - 9PM (Last call 8:40PM)</p>
+        <p>Saturday & Sunday: 12PM - 3PM | 5PM - 10PM (Last call 9:40PM)</p>
+      </div>
+      <div class="faq-item">
+        <h2>Do you offer vegetarian options?</h2>
+        <p>Yes, we have a variety of vegetarian options on our menu. Please check our menu for details.</p>
+      </div>
+      <div class="faq-item">
+        <h2>Can I make a reservation?</h2>
+        <p>Yes, you can book a table through our "Book a Table" page on the website or by calling us directly.</p>
+      </div>
+      <div class="faq-item">
+        <h2>Do you offer catering services for events?</h2>
+        <p>Yes, we provide catering services for events of all sizes. Whether it's a small gathering or a large
+          celebration, we can create a customized menu to suit your needs. Please contact us directly to discuss your
+          event and get a quote.</p>
+      </div>
+      <div class="faq-item">
+        <h2>What payment methods do you accept?</h2>
+        <p>We accept a variety of payment methods, including cash, credit cards (Visa, MasterCard, American Express),
+          debit cards, and e-wallets such as Touch 'n Go, GrabPay, ShopeePay, and Alipay. For online orders, you can
+          also pay through secure online payment methods.</p>
+      </div>
+      <div class="faq-item">
+        <h2>Can I purchase gift cards for Sambal 88?</h2>
+        <p>Yes, gift cards for Sambal 88 are available for purchase. You can buy them in-store or through our website.
+          They make a great gift for anyone who loves our food!</p>
+      </div>
+      <div class="faq-item">
+        <h2>Are there any ongoing promotions or discounts?</h2>
+        <p>We frequently have promotions and discounts! Check our website or follow us on social media for the latest
+          updates on special offers and deals.</p>
+      </div>
+      <div class="faq-item">
+        <h2>Is there parking available at Sambal 88?</h2>
+        <p>Yes, we offer parking for our customers. There is ample parking available in the vicinity of our restaurant.
+          If you have any questions about parking, please feel free to ask our staff.</p>
+      </div>
+      <div class="faq-item">
+        <h2>Can I bring my own wine or beverages to Sambal 88?</h2>
+        <p>We have a selection of beverages available at the restaurant, and we kindly ask that you refrain from
+          bringing your own alcoholic beverages. If you have any specific requests, please contact us beforehand.</p>
+      </div>
+      <div class="faq-item">
+        <h2>Are pets allowed in the restaurant?</h2>
+        <p>While we love animals, we ask that pets do not enter the restaurant to ensure the comfort and safety of all
+          our guests. Service animals are always welcome.</p>
+      </div>
+      <div class="faq-item">
+        <h2>Do you have high chairs or booster seats for children?</h2>
+        <p>Yes, we have high chairs and booster seats available for young children. Please let us know when you arrive
+          so we can prepare one for you.</p>
+      </div>
+      <div class="faq-item">
+        <h2>What should I do if I left something behind in the restaurant?</h2>
+        <p>If you’ve left something behind, please contact us as soon as possible. We’ll check our lost and found and
+          get in touch with you if your item is found.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a>
+    </div>
+    <div class="social-icons">
+      <img src="img/ig.png" alt="Instagram">
+      <img src="img/twitter.png" alt="Twitter">
+      <img src="img/facebook.png" alt="Facebook">
+    </div>
+    <div class="hours">
+      <div>Monday - Friday 11AM - 2:30PM | 5PM - 9PM (Last call 8:40PM)</div>
+      <div>Saturday & Sunday 12PM - 3PM | 5PM - 10PM (Last call 9:40PM)</div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-item h2').forEach(item => {
+      item.addEventListener('click', () => {
+        item.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

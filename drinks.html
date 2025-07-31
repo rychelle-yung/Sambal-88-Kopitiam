@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drinks Menu - Sambal 88</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hero {
+      background: url('img/drinks.jpeg') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .menu-section {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: #fff;
+    }
+    .menu-section.active {
+      display: flex;
+    }
+
+  
+  </style>
+</head>
+<body>
+<header class="header">
+  <img src="img/logo.png" alt="Sambal 88 Logo">
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="booktable.html">Book a Table</a>
+    <a href="cart.html">Cart</a>
+    <a href="giftcard.html">Gift Cards</a>
+    <a href="faq.html">FAQs</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Drinks</h1>
+</section>
+
+<nav class="menu-nav">
+  <a href="breakfast.html">Breakfast</a>
+  <a href="bread.html">Bread & Butter</a>
+  <a href="main.html">Main</a>
+  <a href="vegetarian.html">Vegetarian</a>
+  <a href="sides.html">Sides</a>
+  <a href="drinks.html">Drinks</a>
+</nav>
+
+<nav class="filter-nav">
+  <a href="#" data-filter="cold" class="active">Cold Drinks</a>
+  <a href="#" data-filter="hot">Hot Drinks</a>
+</nav>
+
+<section id="cold-drinks" class="menu-section active">
+  <div class="menu-item">
+    <img src="img/icedkopi.jpeg" alt="Iced Kopi">
+    <div class="details">
+      <h3>Iced Kopi</h3>
+      <p>Iced freshly brewed Nanyang coffee.</p>
+      <p class="price">RM4</p>
+    </div>
+    <button data-name="Iced Kopi" data-price="4">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/icedmocha.jpeg" alt="Iced Mocha">
+    <div class="details">
+      <h3>Iced Mocha</h3>
+      <p>Creamy coffee drink with rich chocolate flavor, topped with whipped cream.</p>
+      <p class="price">RM8</p>
+    </div>
+    <button data-name="Iced Mocha" data-price="8">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/icedcappucino.jpeg" alt="Iced Cappucino">
+    <div class="details">
+      <h3>Iced Cappucino</h3>
+      <p>Cold coffee drink with rich espresso, frothy milk, and a dusting of cocoa or cinnamon.</p>
+      <p class="price">RM8</p>
+    </div>
+    <button data-name="Iced Cappucino" data-price="8">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/icedtehtarik.jpeg" alt="Iced Teh Tarik">
+    <div class="details">
+      <h3>Iced Teh Tarik</h3>
+      <p>Pulled tea with a frothy texture, served cold with sweetened condensed milk.</p>
+      <p class="price">RM4</p>
+    </div>
+    <button data-name="Iced Teh Tarik" data-price="4">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/icedmilo.jpeg" alt="Iced Milo">
+    <div class="details">
+      <h3>Iced Milo</h3>
+      <p>Chilled chocolate malt drink.</p>
+      <p class="price">RM5</p>
+    </div>
+    <button data-name="Iced Milo" data-price="5">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+  <img src="img/icedlemontea.jpeg" alt="Iced Lemon Tea">
+  <div class="details">
+    <h3>Iced Lemon Tea</h3>
+    <p>Refreshing iced tea with a hint of lemon.</p>
+    <p class="price">RM4</p>
+  </div>
+  <button data-name="Iced Lemon Tea" data-price="4">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/icedbandung.jpeg" alt="Iced Bandung">
+    <div class="details">
+      <h3>Iced Bandung</h3>
+      <p>Rose syrup mixed with milk.</p>
+      <p class="price">RM5</p>
+    </div>
+    <button data-name="Iced Bandung" data-price="5">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/icedhorlicks.jpeg" alt="Iced Horlicks">
+    <div class="details">
+      <h3>Iced Horlicks</h3>
+      <p>Cold malt drink made with Horlicks powder, milk, and ice.</p>
+      <p class="price">RM5</p>
+    </div>
+    <button data-name="Iced Horlicks" data-price="5">Add to Cart</button>
+  </div>
+
+</section>
+
+<section id="hot-drinks" class="menu-section">
+  <div class="menu-item">
+    <img src="img/hottehtarik.jpeg" alt="Hot Teh Tarik">
+    <div class="details">
+      <h3>Hot Teh Tarik</h3>
+      <p>Pulled tea with a frothy texture, served hot with sweetened condensed milk.</p>
+      <p class="price">RM3</p>
+    </div>
+    <button data-name="Hot Teh Tarik" data-price="3">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/hottea.jpeg" alt="Hot Tea">
+    <div class="details">
+      <h3>Hot Tea</h3>
+      <p>Traditional hot tea with a choice of flavors.</p>
+      <p class="price">RM3</p>
+    </div>
+    <button data-name="Hot Tea" data-price="3">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/hotmilo.jpeg" alt="Hot Milo">
+    <div class="details">
+      <h3>Hot Milo</h3>
+      <p>Warm and comforting chocolate malt drink.</p>
+      <p class="price">RM4</p>
+    </div>
+    <button data-name="Hot Milo" data-price="4">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/hotkopi.webp" alt="Hot Kopi">
+    <div class="details">
+      <h3>Hot Kopi</h3>
+      <p>Freshly brewed hot Nanyang coffee.</p>
+      <p class="price">RM3</p>
+    </div>
+    <button data-name="Hot Kopi" data-price="3">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/hothorlicks.jpeg" alt="Hot Horlicks">
+    <div class="details">
+      <h3>Hot Horlicks</h3>
+      <p>Hot malt drink made with Horlicks powder and milk.</p>
+      <p class="price">RM4</p>
+    </div>
+    <button data-name="Hot Horlicks" data-price="4">Add to Cart</button>
+  </div>
+
+  <div class="menu-item">
+    <img src="img/barleydrink.jpeg" alt="Barley Drink">
+    <div class="details">
+      <h3>Barley Drink</h3>
+      <p>Hot drink made from boiled barley grains and sweetened with sugar.</p>
+      <p class="price">RM3</p>
+    </div>
+    <button data-name="Barley Drink" data-price="3">Add to Cart</button>
+  </div>
+</section>
+
+<div class="popup-message" id="popup-message">
+  <p id="popup-text"></p>
+</div>
+
+
+<footer class="footer">
+  <div>
+    <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a>
+  </div>
+  <div class="social-icons">
+    <img src="img/ig.png" alt="Instagram">
+    <img src="img/twitter.png" alt="Twitter">
+    <img src="img/facebook.png" alt="Facebook">
+  </div>
+
+  <div class="hours">
+    <div>Monday - Friday 11AM - 2:30PM | 5PM - 9PM (Last call 8:40PM)</div>
+    <div>Saturday & Sunday 12PM - 3PM | 5PM - 10PM (Last call 9:40PM)</div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const filters = document.querySelectorAll('.filter-nav a');
+    const coldDrinksSection = document.getElementById('cold-drinks');
+    const hotDrinksSection = document.getElementById('hot-drinks');
+
+    filters.forEach(filter => {
+      filter.addEventListener('click', function(event) {
+        event.preventDefault();
+        filters.forEach(f => f.classList.remove('active'));
+        filter.classList.add('active');
+        if (filter.dataset.filter === 'cold') {
+          coldDrinksSection.classList.add('active');
+          hotDrinksSection.classList.remove('active');
+        } else {
+          hotDrinksSection.classList.add('active');
+          coldDrinksSection.classList.remove('active');
+        }
+      });
+    });
+  });
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

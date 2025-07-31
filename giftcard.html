@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Cards - Sambal 88</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('img/giftbackground.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .main-content {
+      color: #000;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .main-content h1 {
+      font-size: 2.5em;
+      font-family: 'DM Serif Display', serif;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <img src="img/logo.png" alt="Sambal 88 Logo">
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="booktable.html">Book a Table</a>
+      <a href="cart.html">Cart</a>
+      <a href="giftcard.html">Gift Cards</a>
+      <a href="faq.html">FAQs</a>
+    </nav>
+  </header>
+
+  <section class="main-content">
+    <h1>Sambal 88 Gift Card</h1>
+    <div class="gift-card-container">
+      <div class="gift-card-media" style="background-image: url('img/sambal88.gif');"></div>
+      <div class="gift-card-description">
+        <p>Surprise your loved ones with a Sambal 88 Gift Card! Our gift cards are the perfect gift for any occasion,
+          allowing your friends and family to enjoy a memorable dining experience with us. Choose from various amounts
+          and add a personal message to make it extra special.</p>
+      </div>
+      <form class="purchase-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required placeholder="John Doe">
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+
+        <label for="amount">Gift Card Amount:</label>
+        <select id="amount" name="amount" required>
+          <option value="50">RM 50</option>
+          <option value="100">RM 100</option>
+          <option value="150">RM 150</option>
+          <option value="200">RM 200</option>
+        </select>
+
+        <label for="recipient-name">Recipient Name:</label>
+        <input type="text" id="recipient-name" name="recipient-name" required placeholder="Jane Doe">
+
+        <label for="recipient-email">Recipient Email:</label>
+        <input type="email" id="recipient-email" name="recipient-email" required placeholder="jane.doe@example.com">
+
+        <label for="message">Personal Message:</label>
+        <input type="text" id="message" name="message" placeholder="Happy Birthday!">
+
+        <button type="submit">Purchase Gift Card</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <a href="contact.html">Contact Us</a> | <a href="about.html">About Us</a>
+    </div>
+    <div class="social-icons">
+      <img src="img/ig.png" alt="Instagram">
+      <img src="img/twitter.png" alt="Twitter">
+      <img src="img/facebook.png" alt="Facebook">
+    </div>
+    <div class="hours">
+      <div>Monday - Friday 11AM - 2:30PM | 5PM - 9PM (Last call 8:40PM)</div>
+      <div>Saturday & Sunday 12PM - 3PM | 5PM - 10PM (Last call 9:40PM)</div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.purchase-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Thank you for your purchase! The gift card will be sent to the recipient\'s email.');
+      this.reset();
+    });
+  </script>
+</body>
+
+</html>
