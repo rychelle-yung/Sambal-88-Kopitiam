@@ -1,5 +1,11 @@
 # Sambal 88 Kopitiam Website
 
+![HTML](https://img.shields.io/badge/HTML-Frontend-orange?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-Responsive-blue?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Interactive-yellow?logo=javascript&logoColor=black)
+![Website](https://img.shields.io/badge/Platform-WebApp-green)
+![Restaurant](https://img.shields.io/badge/Project-Restaurant%20Ordering%20System-red?logo=foodpanda&logoColor=white)
+
 ## 📌 Introduction
 
 **Sambal 88 Kopitiam** delivers a wide range of mouth-watering traditional Malaysian dishes along with a carefully selected range of Western cuisine. To meet growing customer needs, an online platform was developed to allow users to browse the menu, place food orders, reserve tables, and purchase gift cards—offering a seamless digital dining experience.
