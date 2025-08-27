@@ -1,4 +1,4 @@
-# 🍴 Sambal 88 Kopitiam Website
+# 🍴 Sambal 88 Kopitiam 
 
 ![HTML](https://img.shields.io/badge/HTML-Frontend-orange?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-Responsive-blue?logo=css3&logoColor=white)
